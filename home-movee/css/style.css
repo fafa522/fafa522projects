@@ -1,0 +1,857 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header {
+    background: url(../img/Component1.jpg) top no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0px 0px 160px 0px;
+    margin: 0px 0px 50px 0px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+.header__logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.header__menu {}
+.menu__icon {}
+.menu__span {}
+.menu__body {}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+.menu__link {}
+.header__phone a {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.main {}
+.main__title {
+    line-height: 1;
+    margin: 40px 0px 0px 0px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 70px;
+}
+.main__title span {
+    display: block;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main__desc {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 44px;
+}
+.main__button {
+    margin: 0px 0px 60px 0px;
+}
+.button__wrap {
+    position: relative;
+    width: 304px;
+    height: 54px;
+}
+.button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #FF352B;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    color: #F2F2F2;
+    z-index: 2;
+    cursor: pointer;
+}
+.button:hover {
+    background: #f03329;
+}
+.button-decor {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #F2F2F2;
+    z-index: 1;
+}
+.main__advantage-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.main__advantage {
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+}
+.main__advantage-block {}
+.advantage-block {
+    width: 200px;
+}
+.advantage-block__img {
+    vertical-align: middle;
+}
+.advantage-block__desc {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    width: 140px;
+    vertical-align: middle;
+}
+.main__button-phone {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.main__button-phone a {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: url(../img/icons/Vector.png) center no-repeat rgba(61, 155, 233, 0.8);
+    z-index: 2;
+}
+.main__button-phone i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(61, 155, 233, 0.3);
+    z-index: 1;
+}
+
+.main__button-phone:hover i {
+    animation: phone 2s infinite;
+}
+
+
+@keyframes phone {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.process {}
+.process__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 0px 70px 0px;
+}
+.process__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.process__block {
+    width: 520px;
+    margin: 0px 0px 60px 0px;
+}
+.block-process__wrap {
+    display: inline-block;
+    width: 400px;
+    margin: 0px 0px 0px 35px;
+}
+.block-process {}
+.block-process__img {
+    object-fit: none;
+    object-position: left top;
+    width: 65px;
+    vertical-align: top;
+    margin: 5px 0px 0px 0px;
+}
+.block-process__title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+}
+.block-process__desc {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.prices {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+.prices__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 15px 0px;
+}
+.prices__subtitle {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px 0px 60px 0px;
+}
+.prices__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+.prices__block {
+    width: 390px;
+    border: 1px solid #EBEBEB
+}
+.prices__block:hover {
+    border: 1px solid #FED100
+}
+.block-prices {}
+.block-prices__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 84px 0px 60px 0px
+}
+.block-prices__desc {
+    line-height: 2;
+}
+.block-prices__price {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 55px 0px 55px 0px
+}
+.block-prices__btn {
+    margin: 0px 0px 80px 0px
+}
+.btn {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background: #FED100;
+}
+.btn:hover {
+    background: #f1c501;
+}
+
+.cars {
+    position: relative;
+    height: 600px;
+}
+.cars__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px 0px 60px 0px;
+    text-align: center;
+}
+.cars__tabs {
+    display: flex;
+    justify-content: center;
+}
+.cars__tab {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.2;
+    border: 1px solid #EBEBEB;
+    cursor: pointer;
+}
+.cars__tab.active {
+    border: 1px solid #FED100
+}
+.cars__blocks {}
+.cars__block {}
+.block-cars {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    width: 1000px;
+    transform: translateX(-50%);
+}
+.block-cars__wrap {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 100px 0px 0px;
+}
+.block-cars__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px 0px 25px 0px;
+}
+.block-cars__desc li {
+    line-height: 2;
+}
+.block-cars__desc li::before {
+    content: '✔';
+    width: 14px;
+    height: 14px;
+    margin: 0px 15px 0px 0px;
+}
+.block-cars__btn {
+    margin: 30px 0px 0px 0px;
+}
+.blok-cars__img {
+    vertical-align: middle;
+}
+
+.reviews {
+    background: #FED100;
+    padding: 85px 0px 100px 0px;
+}
+.reviews__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+}
+.reviews__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+.reviews__block {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.block-reviews {}
+.block-reviews__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px 0px 12px 0px;
+}
+.block-reviews__wrap {
+    margin: 0px 0px 20px 0px;
+}
+.block-reviews__wrap svg {
+    vertical-align: middle;
+}
+.block-reviews__date {
+    vertical-align: middle;
+}
+.block-reviews__desc {
+    flex: 1 1 auto;
+    margin: 0px 0px 20px 0px;
+}
+.block-reviews__subtitle {
+    margin: 0px 0px 60px 0px;
+    text-decoration: underline;
+}
+.btn-reviews {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #333333;
+    background: transparent;
+    cursor: pointer;
+}
+.reviews__btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.main-form {
+    width: 1000px;
+    margin: 100px auto;
+}
+.main-form__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 10px 0px
+}
+.main-form__info {
+    margin: 0px 0px 45px 0px
+}
+.main-form__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+.main-form__wrap {}
+.main-form__button {
+    margin: 0px 0px 20px 0px;
+    width: 250px;
+    height: 50px;
+}
+.main-form__button button {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+}
+.main-form__button .button-decor {
+    border: 1px solid #FED100
+}
+.main-form__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.main-form__checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.main-form__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    line-height: 1;
+    width: 14px;
+    height: 14px;
+}
+.main-form__checkbox:checked+label::before {
+    content: '✔';
+}
+.main-form__label {}
+
+  
+.main-form__inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 0px 0px 20px 0px;
+}
+.main-form__inp .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+.main-form__inp .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.main-form__inp input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+            appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+}
+.main-form__inp input:hover {
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+.main-form__inp input:not(:-moz-placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.main-form__inp input:not(:-ms-input-placeholder) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.main-form__inp input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.main-form__inp input:focus {
+    outline: none;
+    box-shadow: inset 0 -2px 0 #FED100;
+}
+.main-form__inp input:focus + .label {
+    color: #FED100;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.main-form__inp input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+}
+
+
+.map {
+    position: relative;
+}
+.map-block {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    padding: 40px 35px;
+    background: white;
+    z-index: 2
+}
+.map-block__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 40px 0px;
+}
+.map-block__info li {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px 0px 20px 0px;
+}
+.map-block__info li::before {
+    content: '✔';
+    width: 14px;
+    height: 14px;
+    color: #FED100;
+    margin: 0px 16px 0px 0px;
+}
+.map-block__info {
+    margin: 0px 0px 57px 0px;
+}
+.map-block__social {
+    width: 160px;
+    margin-left: auto;
+}
+.map-block__social a {
+    margin-right: 25px;
+}
+.map-block__social a:last-child {
+    margin-right: 0px;
+}
+
+.footer {
+    padding: 100px 0px;
+    background: #FED100;;
+}
+.footer-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "main nav social info";
+    gap: 100px;
+}
+.footer__main {}
+.main-footer {
+    grid-area: main;
+}
+.main-footer__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0px 0px 44px 0px;
+}
+.main-footer a {
+    display: inline-block;
+    font-family: 'Montserrat';
+    margin: 0px 0px 36px 0px;
+}
+.footer__nav {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    grid-area: nav;
+}
+.footer__nav li {
+    margin: 0px 0px 14px 0px;
+}
+.footer__social {
+    grid-area: social;
+}
+.footer__social svg{
+    margin-right: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.footer__social svg:last-child{
+    margin-right: 0px;
+}
+.footer__social svg:hover{
+    fill: red;
+}
+.footer__social a {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.footer__info {
+    grid-area: info;
+}
+.footer__phone {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+@media (max-width:1200px) {
+    .container {
+        width: 90%;
+    }
+    .block-process__img {
+        display: none;
+    }
+    .process__block {
+        width: 430px;
+    }
+    .blok-cars__img {
+        width: 430px;
+    }
+    .block-cars {
+        width: 800px;
+    }
+    .map-block {
+        left: 100px;
+    }
+    .footer-row {
+        grid-template-areas:
+            "main nav"
+            "social info";
+        grid-template-columns: auto;
+    }
+}
+/*burger*/
+
+@media (max-width: 960px) {
+    .menu__icon {
+        position: relative;
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .menu__icon span {
+        transition: all 0.3s ease 0s;
+        top: calc(50% - 2px);
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #333333;
+    }
+    .menu__icon span:first-child {
+        top: 0px;
+    }
+    .menu__icon span:last-child {
+        top: auto;
+        bottom: 0px;
+    }
+    .header__menu {
+        flex: 1 1 auto;
+        margin: 0px 0px 0px 20px;
+    }
+    .menu__body {
+        display: none;
+    }
+    .block-process__img {
+        display: inline-block;
+    }
+    .process__block {
+        width: 520px;
+    }
+    .process__blocks {
+        justify-content: center;
+    }
+    .blok-cars__img {
+        width: 320px;
+    }
+    .block-cars {
+        width: 700px;
+    }
+    .block-cars__desc {
+        display: none;
+    }
+    .block-cars__title {
+        text-align: center;
+        margin: 0;
+    }
+    .cars {
+        height: 400px;
+    }
+    .main-form {
+        width: 90%;
+
+    }
+    .main-form__blocks {
+        flex-wrap: wrap;
+    }
+    .main-form__inp {
+        margin-left: 0;
+    }
+    .map-block {
+        left: 50px;
+    }
+}
+@media (max-width:768px) {
+    .main__advantage {
+        flex-direction: column;
+        width: 200px;
+        min-height: 150px;
+    }
+    .main__title {
+        font-size: 50px;
+    }
+    .main__desc {
+        font-size: 20px;
+    }
+    .block-process__img {
+        display: none;
+    }
+    .block-cars {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .block-cars {
+        width: 400px;
+    }
+    .block-cars__wrap {
+        margin: 0;
+    }
+    .cars__tab {
+        border: none;
+    }
+    .cars__tab.active {
+        border: none;
+    }
+    .cars__tab {
+        width: 100%;
+        text-decoration: underline;
+    }
+    .cars__title {
+        margin: 0px 0px 30px 0px
+    }
+    .cars {
+        height: 600px;
+    }
+    .map-block {
+        display: none;
+    }
+    .footer-row {
+        grid-template-areas:
+            "main"
+            "nav"
+            "social"
+            "info";
+        grid-template-columns: auto;
+    }
+    .footer__phone {
+        text-align: left;
+    }
+}
+
+@media (max-width:576px) {
+    .header__phone {
+        display: none;
+    }
+    .main__title {
+        font-size: 40px;
+    }
+    .main__desc {
+        font-size: 20px;
+    }
+    .button__wrap {
+        width: 280px;
+        height: 50px;
+    }
+    .main__button-phone {
+        display: none;
+    }
+    .block-process__wrap {
+        width: 90%;
+        margin: 0px 0px 0px 15px;
+    }
+    .block-cars {
+        width: 310px;
+    }
+    .main-form__blocks {
+        justify-content: center;
+    }
+    .main-form__inp {
+        margin: 0;
+    }
+    .main-form {
+        text-align: center;
+    }
+    .map-block {
+        display: none;
+    }
+    footer {
+        text-align: center;
+    }
+    .footer-row {
+        justify-items: center;
+        gap: 50px;
+    }
+    .footer__social svg {
+        margin: 15px 20px;
+    }
+    .footer__phone {
+        text-align: center;
+    }
+}
